@@ -1,0 +1,16 @@
+{
+  "author": "igorlogius",
+  "content_scripts": [
+  {
+    "all_frames": true,
+    "matches": ["https://mozilla.crowdicity.com/post/*"],
+    "js": ["content-script.js"]
+  }
+  ],
+  "description": "",
+  "icons": {
+  },
+  "manifest_version": 2,
+  "name": "expand-comments-ideas-mozilla",
+  "version": "1.0.0"
+}
