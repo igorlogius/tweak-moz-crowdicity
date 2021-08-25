@@ -5,7 +5,26 @@ function expandComments() {
 	}
 }
 
-expandComments();
+function addPermaLinks() {
+	const postActions = document.querySelectorAll('div[id^=comment-] p.b-single-idea__comment-actions')
+	for(const postAction of postActions) {
+		// create anchor
+		let a = document.createElement("a")
+		a.innerHTML = '&#128279; permalink';
+		const url = new URL(window.location.href);
+		const origin = url.origin;
+		const path = url.pathname;
+		// get post Id
+		const post = postAction.closest('div[id^="comment-"]');
+		const postid = post.id.split("-")[1];
+		if(postid){
+			a.href = origin + path + "?highlightPost=" + postid;
+			postAction.appendChild(a);
+		}
+	}
+}
 
-(new MutationObserver(expandComments)).observe(document.body, { attributes: false, childList: true, subtree: true });
+
+addPermaLinks();
+expandComments();
 

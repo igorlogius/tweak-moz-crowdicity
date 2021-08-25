@@ -11,6 +11,6 @@
   "icons": {
   },
   "manifest_version": 2,
-  "name": "expand-comments-moz-crowdicity",
-  "version": "1.0.0"
+  "name": "tweak-moz-crowdicity",
+  "version": "1.2.1"
 }
