@@ -2,8 +2,7 @@
   "author": "igorlogius",
   "content_scripts": [
   {
-    "all_frames": true,
-    "matches": ["https://mozilla.crowdicity.com/post/*"],
+    "matches": ["https://mozilla.crowdicity.com/*"],
     "js": ["content-script.js"]
   }
   ],
@@ -12,5 +11,5 @@
   },
   "manifest_version": 2,
   "name": "tweak-moz-crowdicity",
-  "version": "1.2.2"
+  "version": "1.2.3"
 }
