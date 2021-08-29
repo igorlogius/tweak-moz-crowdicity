@@ -3,7 +3,8 @@
   "content_scripts": [
   {
     "matches": ["https://mozilla.crowdicity.com/*"],
-    "js": ["content-script.js"]
+    "js": ["script.js"],
+    "css": ["style.css"]
   }
   ],
   "description": "",
@@ -11,5 +12,5 @@
   },
   "manifest_version": 2,
   "name": "tweak-moz-crowdicity",
-  "version": "1.2.3"
+  "version": "1.3.3"
 }
