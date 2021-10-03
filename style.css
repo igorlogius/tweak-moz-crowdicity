@@ -1,6 +1,7 @@
-#new-comment {
-	height: 6em;
-}
 #post_text {
-	height:12em;
+	height:12em !important;
+}
+
+textarea[id^=new-comment] {
+	height: 6em !important;
 }
